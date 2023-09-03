@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" rel="stylesheet"/>
+    <title>Portfolio</title>
+</head>
+<body>
+    <nav id="nav-bar">
+        <div class="logo">Chiranjeev Kartik</div>
+        <div>
+            <ul class="links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#Projects">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="sm-nav-bar">
+        <div class="logo">Chiranjeev Kartik</div>
+        <div class="sm-menu">
+            <div class="sm-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="sm-menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                    <li><a href="#Projects" onclick="toggleMenu()">Projects</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        
+        <div class="profile-text">
+            <p class="profile-text-p1">Hello, I'm</p>
+            <h1 class="title">Chiranjeev</h1>
+            <p class="profile-text-p2">FullStack Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2 resume-btn" onclick="window.open('./assets/resume-example.pdf')">Download Resume</button>
+            </div> 
+        </div>
+    </section>
+
+    <section id="about">
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section-image">
+                <img src="./assets/about-pic.png" alt="Profile Pic" class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="about-boxes">
+                        <img src="./assets/experience.png" alt="Experience" class="icon"/>
+                        <h3>Experience</h3>
+                        <p><b>CodeSoft</b><br>Web Developmemt</p>
+                    </div>
+                    <div class="about-boxes">
+                        <img src="./assets/education.png" alt="Education" class="icon"/>
+                        <h3>Education</h3>
+                        <p><b>B.Tech(CSE)</b><br>AKTU</p>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit reprehenderit, molestiae libero ratione quasi accusantium cumque magni molestias consectetur dicta corporis voluptatum labore facere officiis similique porro sequi deserunt! Harum!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h1 class="title">Skills</h1>
+        <div class="skills-details-container">
+            <div class="about-container">
+                <div class="about-boxes">
+                    <h2 class="skill">Frontend Development</h2>
+                    <div class="sub-skill">
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon"/>
+                            <div>HTML</div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon"/>
+                            <div>CSS</div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon"/>
+                            <div>JavaScript</div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon"/>
+                            <div>ReactJS</div>
+                        </article>
+                    </div>
+                </div>
+                <div class="about-boxes">
+                    <h2 class="skill">Backend Development</h2>
+                    <div class="sub-skill">
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon"/>
+                            <div>NodeJS</div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon"/>
+                            <div>ExpressJS</div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon"/>
+                            <div>MongoDB</div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon"/>
+                            <div>Git</div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h1 class="title">Projects</h1>
+        <div class="project-details-container">
+            <div class="about-container">
+                <div class="about-boxes">
+                    <h2>Weather Website</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://'">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://'">Live Demo</button>
+                    </div>
+                </div>
+                <div class="about-boxes">
+                    <h2>ToDo List</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://'">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://'">Live Demo</button>
+                    </div>
+                </div>
+                <div class="about-boxes">
+                    <h2>Simple Calculator</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://'">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://'">Live Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="title">Contact</h1>
+        <div class="contact-info-container">
+            <div class="contact-info">
+                <img src="./assets/email.png" class="icon mail-icon" alt="email"/>
+                <p>chiranjeev.7.k@gmail.com</p>
+            </div>
+            <div class="contact-info">
+                <img src="./assets/phone.png" class="icon" alt="Phone"/>
+                <p><a href="">+91 7906xxxxxx</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav id="ft-nav-bar">
+            <div>
+                <ul class="links">
+                    <li><a href="https://www.linkedin.com/in/chiranjeev-kartik-7ab42828a/"><img src="./assets/linkedin.png" class="ft-icon"/></a></li>
+                    <li><a href="https://github.com/ckartik7"><img src="./assets/github.png" class="ft-icon"/></a></li>
+                </ul>
+            </div>
+        </nav>
+        <p class="copyright">Copyright &#169 Chiranjeev Kartik</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
